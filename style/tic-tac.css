@@ -1,5 +1,5 @@
 body {
-  background-image: url("../static/img.png");
+  background-image: url("../static/back_game.png");
   background-size: cover;
   margin: 0 auto;
   padding: 0;
@@ -176,5 +176,3 @@ td:hover {
     display: none;
   }
 }
-
-/*# sourceMappingURL=tic-tac.css.map */

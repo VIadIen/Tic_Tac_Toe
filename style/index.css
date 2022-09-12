@@ -6,24 +6,41 @@ body {
   text-align: center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 header {
-  height: 30vh;
+  height: 40vh;
   width: 100vw;
 }
 
 main {
   vertical-align: bottom;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
 }
 
+#player{
+  font-family: "COMIC SANS MS", fantasy;
+  color: #109b12;
+  margin: 5vmin auto;
+  font-size: 6vmin;
+  padding: 3px;
+  width: 25vmin;
+  height: 20vmin;
+  text-align: center;
+}
+#player img{
+  margin: 0 auto;
+  width: 25vmin;
+  height: 25vmin;
+  border-radius: 100%;
+}
 button {
-  display: inline-block;
-  margin: 25vh 1vh 1vh 1vh;
-  padding: 15px 25px;
-  font-size: 5vh;
+  display: block;
+  margin: 5vmin auto;
+  padding: 2vmin 3vmin;
+  font-size: 5vmin;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -32,7 +49,7 @@ button {
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 1.5vmin #999;
 }
 
 button:hover {
@@ -41,8 +58,14 @@ button:hover {
 
 button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 1vmin #666;
   transform: translateY(4px);
 }
 
-/*# sourceMappingURL=index.css.map */
+@media (max-width: 700px) {
+  #player, #player img{
+    margin: 5vmin auto;
+    width: 35vmin;
+    height: 35vmin;
+  }
+}

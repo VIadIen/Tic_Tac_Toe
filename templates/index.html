@@ -10,12 +10,18 @@
 </head>
 <body>
 <header>
+    <div id="player">
+        <img src="../static/Giga.jpg" alt="Профиль">
+        <span>Боба</span>
+    </div>
 </header>
 <main>
     <form action="tic-tac.html">
-        <label for="name"></label><input id="name">
-        <button type="button" onclick="addGame()">ffff</button>
-        <button type="submit" onclick="newGame()">Давай играть</button>
+        <div id="btn-group">
+            <button type="button" onclick="addGame()">Редактировать профиль</button>
+            <button type="button" onclick="addGame()">Подключиться к друзьям</button>
+            <button type="submit" onclick="newGame()">Найти свободную игру</button>
+        </div>
     </form>
 </main>
 </body>
