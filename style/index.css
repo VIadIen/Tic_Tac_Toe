@@ -1,0 +1,48 @@
+body {
+  background-image: url("../static/back_index.png");
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 30vh;
+  width: 100vw;
+}
+
+main {
+  vertical-align: bottom;
+  height: 70vh;
+  width: 100vw;
+}
+
+button {
+  display: inline-block;
+  margin: 25vh 1vh 1vh 1vh;
+  padding: 15px 25px;
+  font-size: 5vh;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*# sourceMappingURL=index.css.map */

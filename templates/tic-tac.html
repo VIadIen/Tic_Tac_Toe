@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../Tic_Tac_Toe/style/tic-tac.css">
+    <script src="../javascript/game.js"></script>
+    <meta name="description" content="Крестики-Нолики" />
+    <title>Крестики-Нолики</title>
+</head>
+<body>
+<header>
+    <div id="player1">
+        <img src="../static/nigga.jpg" alt="Игрок Х">
+        <span id="player0">Игрок Х</span>
+    </div>
+    <div><span id="code"></span></div>
+    <div id="player2">
+        <img src="../static/Giga.jpg" alt="Игрок 0">
+        <span>Игрок 0</span>
+    </div>
+</header>
+<main>
+    <div id="win"><img src='' id="win_line">
+    </div>
+    <div id="game">
+        <table class="field">
+            <tr>
+                <td id="1" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="2" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="3" onclick="cellClick(id)" data-stat="true"></td>
+            </tr>
+            <tr>
+                <td id="4" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="5" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="6" onclick="cellClick(id)" data-stat="true"></td>
+            </tr>
+            <tr>
+                <td id="7" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="8" onclick="cellClick(id)" data-stat="true"></td>
+                <td id="9" onclick="cellClick(id)" data-stat="true"></td>
+            </tr>
+        </table>
+        <div id="pen_grid">
+            <svg viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_i_17_27684)">
+                    <path d="M300 0C299.433 27.208 304.361 37 299.397 83.5C294.434 130 306.155 378.103 302.5 417.5C298.992 455.308 304.361 720.5 304.361 784.5C304.361 848.5 302.471 862.299 300 900"
+                          stroke="#2DA0F3" stroke-width="10"/>
+                </g>
+                <path d="M602.464 0C597.014 146.135 602.464 288 602.464 397.5C596.5 557.5 598.064 693.912 602.464 900"
+                      stroke="#2DA0F3" stroke-width="10"/>
+                <path d="M0 300C0 300 80 300 167.5 300C255 300 306.5 295 339.5 300C372.5 305 703.5 305 742.5 300C781.5 295 900 300 900 300"
+                      stroke="#2DA0F3" stroke-width="10"/>
+                <path d="M0 600C0 600 62.5 592 164.5 600C266.5 608 676 594 728.5 600C781 606 900 600 900 600"
+                      stroke="#2DA0F3" stroke-width="10"/>
+                <defs>
+                    <filter id="filter0_i_17_27684" x="293.151" y="-0.104164" width="16.2094" height="904.431"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_17_27684"/>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="info">
+        <a id="text" href="index.html">Ожидание подключения</a>
+    </div>
+</footer>
+</body>
+</html>
