@@ -29,11 +29,11 @@ function cellClick(id) {
 function updateCell(id, sign) {
     if (document.getElementById(id).dataset.stat === 'true') {
         if (sign === 'X') {
-            document.getElementById(id).style.backgroundImage = "url('../static/cross.png')";
+            document.getElementById(id).style.backgroundImage = "url('../static/lines/cross.png')";
             document.getElementById(id).style.backgroundSize = 'cover';
             document.getElementById(id).style.animation = "cross 1s";
         } else {
-            document.getElementById(id).style.backgroundImage = "url('../static/zero.png')";
+            document.getElementById(id).style.backgroundImage = "url('../static/lines/zero.png')";
             document.getElementById(id).style.backgroundSize = 'cover';
             document.getElementById(id).style.animation = "zero 1s";
         }
@@ -53,7 +53,7 @@ function winLine(vector, player) {
     let b = vector.slice(1)
     document.getElementById('text').innerText = player + ' ВЫИГРАЛ'
     if (a === '0' && b === '2') {
-        document.getElementById('win_line').src = '../static/line_hor.png'
+        document.getElementById('win_line').src = '../static/lines/line_hor.png'
         document.getElementById('win_line').style.maxHeight = '2%'
         document.getElementById('win_line').style.maxWidth = '100%'
         document.getElementById('win_line').style.marginTop = '15%'
@@ -61,7 +61,7 @@ function winLine(vector, player) {
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '3' && b === '5') {
-        document.getElementById('win_line').src = '../static/line_hor.png'
+        document.getElementById('win_line').src = '../static/lines/line_hor.png'
         document.getElementById('win_line').style.maxHeight = '2%'
         document.getElementById('win_line').style.maxWidth = '100%'
         document.getElementById('win').style.alignItems = 'center'
@@ -69,7 +69,7 @@ function winLine(vector, player) {
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '6' && b === '8') {
-        document.getElementById('win_line').src = '../static/line_hor.png'
+        document.getElementById('win_line').src = '../static/lines/line_hor.png'
         document.getElementById('win_line').style.marginTop = '81%'
         document.getElementById('win_line').style.maxHeight = '2%'
         document.getElementById('win_line').style.maxWidth = '100%'
@@ -77,30 +77,30 @@ function winLine(vector, player) {
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '0' && b === '6') {
-        document.getElementById('win_line').src = '../static/line_vert.png'
+        document.getElementById('win_line').src = '../static/lines/line_vert.png'
         document.getElementById('win_line').style.marginLeft = '15%'
         document.getElementById('win_line').style.animation = 'vertLine 1s'
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '1' && b === '7') {
-        document.getElementById('win_line').src = '../static/line_vert.png'
+        document.getElementById('win_line').src = '../static/lines/line_vert.png'
         document.getElementById('win_line').style.marginLeft = '48%'
         document.getElementById('win_line').style.animation = 'vertLine 1s'
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '2' && b === '8') {
-        document.getElementById('win_line').src = '../static/line_vert.png'
+        document.getElementById('win_line').src = '../static/lines/line_vert.png'
         document.getElementById('win_line').style.marginLeft = '81%'
         document.getElementById('win_line').style.animation = 'vertLine 1s'
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '8' && b === '0') {
-        document.getElementById('win_line').src = '../static/line_lup_rown.png'
+        document.getElementById('win_line').src = '../static/lines/line_lup_rown.png'
         document.getElementById('win_line').style.animation = 'lupRown 2s'
         document.getElementById('win').style.zIndex = '1'
     }
     if (a === '6' && b === '2') {
-        document.getElementById('win_line').src = '../static/line_rup_lown.png'
+        document.getElementById('win_line').src = '../static/lines/line_rup_lown.png'
         document.getElementById('win_line').style.animation = 'rupLown 1s'
         document.getElementById('win').style.zIndex = '1'
     }
